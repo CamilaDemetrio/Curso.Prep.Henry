@@ -143,22 +143,23 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return math.pow(num,2);
   
+  var resultado = Math.pow(num,2);
+  return resultado; 
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var resultado = math.pow(num,3);
+  var resultado = Math.pow(num,3);
   return resultado; 
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var resultado = math.pow(num,exponent);
+  var resultado = Math.pow(num,exponent);
   return resultado; 
   
 }
@@ -166,7 +167,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var redondeo = math.round(num);
+  var redondeo = Math.round(num);
   return redondeo;  
   
 }
@@ -174,7 +175,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var redondeo = math.ceil(num);
+  var redondeo = Math.ceil(num);
   return redondeo; 
   
 }
@@ -182,7 +183,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var numero = math.random();
+  var numero = Math.random();
   return numero; 
 }
 
@@ -273,7 +274,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  var vocal = "Es vocal";
+  var incorrecto = "Dato incorrecto";
+  if(( indexOf(letra) !== -1) && (letra.length === 0)){
+      return vocal;
+  }
+  else{
+      return incorrecto; 
+  }
 }
 
 
