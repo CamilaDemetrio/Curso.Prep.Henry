@@ -276,7 +276,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   var vocal = "Es vocal";
   var incorrecto = "Dato incorrecto";
-  if(( indexOf(letra) !== -1) && (letra.length === 0)){
+  if((letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') && (letra.length === 1)){
       return vocal;
   }
   else{
